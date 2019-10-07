@@ -17,7 +17,7 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="John Doe">
     
-    <meta name="keywords" content="hexo,hexo-theme,hexo-blog,DAYceng,blog,IT">
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
@@ -376,6 +376,37 @@ height:50vh;
         </div>
     </article>
     
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/07/IOT-VEN算法理解/" >
+            
+                <span>IOT-VEN算法理解</span>
+        </a>
+        <div class="abstract-content">
+            IOT-VEN算法理解该算法的输入为一段时间内查询的DNS名称集，输出的为某一设备可能的供应商的名字以及它的查询DNS名称分数（类似相关度，一个标记）
+过程：先用filter（）函数过滤掉DNS中的一些无用域名（大多是一些四级域名和公共域名以及对于设备识别无用的域名），然后检索DNS名称的持有者，运用lookup（）可以从包括WHOIS和x509证书等不同来源进行查询，然后对应DNS持有者的计数加一，接下来对每个DNS持有者持有的DNS名称数进行归一化处理导出一个“分数”，最后算法会导出计数最多和分数最高的持有者，如果有多个持有者得同一分数和持有数量，那就都输出。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/07</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "物联网">物联网</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
     <!-- paginator  -->
     
 </main>
@@ -567,9 +598,16 @@ height:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 1
+        Total : 2
         </div>
         <!-- search  -->
         
@@ -588,10 +626,17 @@ height:50vh;
             <span class="archive-post-date">10/07</span><a class="archive-post-title" href= "/2019/10/07/test-my-site/" >test_my_site</a>
         </li>
     
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/07</span><a class="archive-post-title" href= "/2019/10/07/IOT-VEN算法理解/" >IOT-VEN算法理解</a>
+        </li>
+    
     </div>
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="物联网"><span class="iconfont-archer">&#xe606;</span>物联网</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
